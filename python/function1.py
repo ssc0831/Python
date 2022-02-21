@@ -130,6 +130,28 @@
 # def add_and_mul(a,b):
 #     return a+b, a*b
 
-# result = add_and_mul(3,4)
-# print(result)
-# print(type(result))
+# def say_myself(name, old, man=True): → 매개변수 마지막에 기본값을 적용해야함.
+#     print("나의 이름은 %s 입니다." % name) 
+#     print("나이는 %d살입니다." % old) 
+#     if man: 
+#         print("남자입니다.")
+#     else: 
+#         print("여자입니다.")
+
+# say_myself('홍길동', 23)
+
+# a = 1
+# def vartest(a):
+#     a = a +1
+#     print("함수안의 a의 값 %d" % a)
+
+# vartest(a)
+# print("함수밖의 a의 값 %d" % a)
+
+a = 1
+def vartest(a):
+    a = a +1
+    return a
+
+a = vartest(a)
+print(a)
