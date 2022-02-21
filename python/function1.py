@@ -123,26 +123,13 @@
 # print(result)
 # ※ args는 인수를 뜻하는 영어 단어 arguments의 약자이며 관례적으로 자주 사용한다.
 
-def add_mul(choice, *args):
-    if choice == "add":
-        result = 0
-    for i in args:
-        result = result + i
-    elif choice == "mul":
-    result = 1
-    for i in args:
-        result = result * i 
-    return result
-
-result = add_mul('add', 1,2,3,4,5)
-print(result)
-result = add_mul('mul', 1,2,3,4,5)
-print(result)
+# result = add_mul('mul', 1,2,3,4,5)
+# print(result)
 
 
-def add_and_mul(a,b):
-    return a+b, a*b
+# def add_and_mul(a,b):
+#     return a+b, a*b
 
-result = add_and_mul(3,4)
-print(result)
-print(type(result))
+# result = add_and_mul(3,4)
+# print(result)
+# print(type(result))
